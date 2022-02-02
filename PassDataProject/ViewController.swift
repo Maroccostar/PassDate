@@ -5,6 +5,7 @@
 //  Created by user on 30.01.2022.
 //
 // проверка git
+// проверка связи с git
 import UIKit
 
 class ViewController: UIViewController {
