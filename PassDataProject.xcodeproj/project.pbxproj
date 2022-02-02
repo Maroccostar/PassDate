@@ -13,6 +13,7 @@
 		CE78AF1627A70DB900EA4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE78AF1427A70DB900EA4E21 /* Main.storyboard */; };
 		CE78AF1827A70DBB00EA4E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE78AF1727A70DBB00EA4E21 /* Assets.xcassets */; };
 		CE78AF1B27A70DBB00EA4E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE78AF1927A70DBB00EA4E21 /* LaunchScreen.storyboard */; };
+		CE78AF2327A71C6400EA4E21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78AF2227A71C6400EA4E21 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE78AF1727A70DBB00EA4E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE78AF1A27A70DBB00EA4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE78AF1C27A70DBB00EA4E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE78AF2227A71C6400EA4E21 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CE78AF1027A70DB900EA4E21 /* SceneDelegate.swift */,
 				CE78AF1227A70DB900EA4E21 /* ViewController.swift */,
 				CE78AF1427A70DB900EA4E21 /* Main.storyboard */,
+				CE78AF2227A71C6400EA4E21 /* SecondViewController.swift */,
 				CE78AF1727A70DBB00EA4E21 /* Assets.xcassets */,
 				CE78AF1927A70DBB00EA4E21 /* LaunchScreen.storyboard */,
 				CE78AF1C27A70DBB00EA4E21 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE78AF2327A71C6400EA4E21 /* SecondViewController.swift in Sources */,
 				CE78AF1327A70DB900EA4E21 /* ViewController.swift in Sources */,
 				CE78AF0F27A70DB900EA4E21 /* AppDelegate.swift in Sources */,
 				CE78AF1127A70DB900EA4E21 /* SceneDelegate.swift in Sources */,

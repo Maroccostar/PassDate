@@ -26,16 +26,16 @@
                                 <rect key="frame" x="54" y="279" width="325" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-N2-NPb">
                                 <rect key="frame" x="54" y="346" width="325" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc6-Q3-8zg">
-                                <rect key="frame" x="130" y="569" width="155" height="39"/>
+                                <rect key="frame" x="130" y="509" width="155" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -43,7 +43,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtM-Tz-AJJ"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P04-hX-n0H">
+                                <rect key="frame" x="142" y="691" width="130" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -54,21 +64,27 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gbP-fl-lXc" secondAttribute="bottom" constant="709" id="znG-ui-JgN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LoginTF" destination="osb-3U-Bl9" id="ckU-J5-rxM"/>
+                        <outlet property="passwordTF" destination="AJD-N2-NPb" id="e02-mw-zrc"/>
+                        <outlet property="resultLabel" destination="P04-hX-n0H" id="Hqh-Fz-3pw"/>
+                        <segue destination="9UI-Kb-Div" kind="show" identifier="detailSegue" id="X84-Qj-CAL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="81.696428571428569"/>
+            <point key="canvasLocation" x="-268.1159420289855" y="-25.446428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Ra9-26-Ven">
             <objects>
-                <viewController id="9UI-Kb-Div" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="9UI-Kb-Div" customClass="SecondViewController" customModule="PassDataProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I8n-tw-c5E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-2G-bT8">
-                                <rect key="frame" x="141" y="176" width="132" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-2G-bT8">
+                                <rect key="frame" x="90" y="154" width="234" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -76,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-vZ-sae">
-                                <rect key="frame" x="148" y="617" width="125" height="45"/>
+                                <rect key="frame" x="145" y="607" width="125" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
@@ -84,15 +100,24 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="goBackTapped:" destination="9UI-Kb-Div" eventType="touchUpInside" id="xdo-JA-gDB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDo-UM-7P7"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pst-R2-mwf"/>
+                    <connections>
+                        <outlet property="label" destination="wrM-2G-bT8" id="a1r-6u-ZND"/>
+                        <segue destination="HTw-Dm-HTp" kind="unwind" identifier="unwingSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="6rc-IV-QRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1d-7q-s6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HTw-Dm-HTp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="589.85507246376812" y="81.696428571428569"/>
+            <point key="canvasLocation" x="500.00000000000006" y="-25.446428571428569"/>
         </scene>
     </scenes>
     <resources>
